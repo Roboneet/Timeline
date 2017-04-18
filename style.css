@@ -40,6 +40,7 @@ h1{
 	line-height: 20px;
 	padding: 10px;
 	box-shadow: 0 3px 0 rgb(249,161,31);
+
 }
 
 .left, .right{
@@ -47,6 +48,15 @@ h1{
 	width: 40%;
 	text-align: center;
 }
+
+.block:hover{
+	color: rgba(0,0,0,.37);
+	transform: translateY(3px);
+
+}
+
+
+
 
 .bar{
 	border-radius: inherit;
@@ -75,6 +85,7 @@ h1{
 	clear: both;
 }
 
+ 
 .dot{
 	position: absolute;
 	
@@ -85,6 +96,11 @@ h1{
 	border-radius: 50%;
 	left: calc(50% - 10px);
 	
+	
+}
+
+.block:hover .dot{
+	display: none;
 }
 
 @media only screen and (max-width : 500px){
