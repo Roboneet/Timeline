@@ -1,0 +1,108 @@
+body{
+	background-color: #2a7c94;
+	color: rgb(120,51,147);
+	font: 18px/20px arial,verdana;
+}
+h1{
+	text-align: center;
+	color : rgba(0,0,0,0.37);
+}
+.timeline{
+	width: 400px;
+	margin: 0 auto;
+
+	position: relative;
+	overflow: contain;
+}
+
+.line{
+	position: absolute;
+	left: calc(50% - 2px);
+	height: 100%;
+	width: 4px;
+	border-radius: 6px;
+	background: rgba(0,0,0,0.3);
+}
+
+.main{
+	
+	width: 350px;
+	margin: 0 auto;
+}
+
+.block{
+	border: 1px solid #b5b5b5;
+	margin-top: 30px;
+	border-radius: 6px;
+	clear: both;
+	
+	background-color: rgb(230,231,232);
+	line-height: 20px;
+	padding: 10px;
+	box-shadow: 0 3px 0 rgb(249,161,31);
+}
+
+.left, .right{
+	float: left;
+	width: 40%;
+	text-align: center;
+}
+
+.bar{
+	border-radius: inherit;
+	postition: relative;
+	margin: 0;
+	background-color: #fff;
+	height: 0%;
+
+
+}
+
+@media only screen and (min-width : 500px){
+	.right{
+		text-align: center;
+		float: right;
+		width: 40%;
+	}
+}
+
+
+
+
+
+.timeline p{
+	visibility: hidden;
+	clear: both;
+}
+
+.dot{
+	position: absolute;
+	
+	width: 0;
+	height: 0;
+	border: 10px solid rgb(239,69,129);
+	
+	border-radius: 50%;
+	left: calc(50% - 10px);
+	
+}
+
+@media only screen and (max-width : 500px){
+	.timeline{
+		width: 250px;
+	}
+	.main{
+		width: 170px;
+	}
+	.line{
+		left: 10px;
+	}
+	.dot{
+	 left: 3px;
+	}
+	.left,.right{
+		width: 90%;
+	}
+
+}
+
